@@ -27,3 +27,8 @@ fn write_contact(mut file: File, name: String, number: String) {
     let person = format!("{name} : {number}");
     file.write(person.as_bytes());
 } ```
+
+
+
+
+screw AI.
