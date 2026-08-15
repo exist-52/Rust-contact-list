@@ -1,4 +1,5 @@
 # Carnet de contacts en fichier texte
+##go down for english.
 ---
 Ajouter/lister/supprimer des contacts, sauvegardés dans un fichier .txt (une ligne = un contact, format nom,tel). Pas de JSON pour l'instant, juste du texte brut.
 Ça t'apprend : lire/écrire un fichier ligne par ligne, parser une string, structurer les données en mémoire (Vec<Contact>).
@@ -27,6 +28,16 @@ fn write_contact(mut file: File, name: String, number: String) {
     let person = format!("{name} : {number}");
     file.write(person.as_bytes());
 } ```
+
+# the cli tool is now fully functional, ignore the french up ahead.
+this tool lets u add or fetch a contact in a file that u give as argument. the contact name is not case sensitive but the filename is. 
+to use it you open your terminal and do : contact -a name number/or email file-path, to add a number. itll create the file if it doesnt exist.
+                                          contact -f name file-path, to fetch a number using the name.
+to install it, u just clode this repository with git clotne and go in the repository directory, then u do 
+```cargo install -path .```
+you have to have rust and cargo installed first.
+ill see if i can post it on crate.io or idk what im not new to this.
+id be happy to get feedbacks on discord: exist_52 
 
 
 
