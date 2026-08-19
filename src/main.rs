@@ -60,7 +60,7 @@ fn write_contact(mut file: File, name: String, number: String) {
     let person = format!("{name} : {number} \n");
     match file.write_all(person.as_bytes()) {
         Ok(_) => {
-            println!("success write ");
+            println!("successfully added");
         }
         Err(e) => {
             println!("couldnt write: {}", e);
