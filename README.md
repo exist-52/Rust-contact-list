@@ -33,10 +33,13 @@ fn write_contact(mut file: File, name: String, number: String) {
 this tool lets u add or fetch a contact in a file that u give as argument. the contact name is not case sensitive but the filename is. 
 to use it you open your terminal and do : contact -a name number/or email file-path, to add a number. itll create the file if it doesnt exist.
                                           contact -f name file-path, to fetch a number using the name.
+                                          exemple: ```contact -a bob 8382838289 Contacts.txt ```
+                                          or: ```contact -f bob Contacts.txt```
 to install it, u just clode this repository with git clotne and go in the repository directory, then u do 
 ```cargo install -path .```
 you have to have rust and cargo installed first.
 ill see if i can post it on crate.io or idk what im not new to this.
+i dont know how this licence thing works to lol but feel free to use modify and share this code just tag me pls im looking for opportunities.
 id be happy to get feedbacks on discord: exist_52 
 
 
